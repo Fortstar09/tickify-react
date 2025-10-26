@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import "tailwindcss";
+
+
+body{
+  font-family: "Bricolage Grotesque", sans-serif;
+}
+
+button{
+  cursor: pointer;
+  scroll-behavior: smooth;
+}
+
+input, select, textarea:focus-visible{
+  outline-width: 0.5px;
+  outline-color: var(--color-blue-100);
+}
+
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.3s ease-out;
+}
