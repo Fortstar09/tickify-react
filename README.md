@@ -1,16 +1,55 @@
-# React + Vite
+# 🎫 Tickify — Ticketing Made Simple
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Tickify** is a modern ticket management system built for teams.  
+Route, prioritize, and resolve customer requests faster — with built-in SLAs, automation, and analytics in one intuitive dashboard.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🧠 Tech Stack
 
-## React Compiler
+| Category             | Technology                                     |
+| -------------------- | ---------------------------------------------- |
+| Framework            | [React](https://react.dev/) (with Vite or CRA) |
+| Styling              | Tailwind CSS / CSS Modules                     |
+| Icons                | [Lucide React](https://lucide.dev/)            |
+| State Management     | React Hooks / Context API                      |
+| Routing              | React Router                                   |
+| Build Tool           | Vite or Create React App                       |
+| Linting & Formatting | ESLint, Prettier                               |
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## ⚙️ Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Follow these steps to set up the project locally.
+
+### 1️⃣ Clone the Repository
+
+```bash
+git clone https://github.com/<your-username>/tickify.git
+cd tickify
+
+```
+
+### 2️⃣ Install Dependencies
+
+```bash
+
+npm install
+# or
+yarn install
+
+```
+
+### 3️⃣ Run the Development Server
+
+```bash
+npm run dev
+# or
+yarn dev
+
+```
+
+This will start the app locally.
+By default, it runs on http://localhost:5173
+

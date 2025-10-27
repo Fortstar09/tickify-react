@@ -1,3 +1,4 @@
+import { CalendarSync, ChartLine, Waypoints } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const FeatureCard = ({ icon, title, children }) => (
@@ -5,7 +6,7 @@ const FeatureCard = ({ icon, title, children }) => (
     className="bg-white rounded-2xl shadow-md p-6 flex flex-col gap-3"
     role="article"
   >
-    <img src={icon} alt={`${title} icon`} className="w-12 h-12" />
+    {icon}
     <h3 className="text-lg font-semibold">{title}</h3>
     <p className="text-sm text-gray-600">{children}</p>
   </article>
@@ -36,12 +37,12 @@ const Testimonial = ({ name, role, text }) => (
 export default function Landing() {
   return (
     <div className="min-h-screen bg-gray-50 text-gray-900">
-      <div
-        className="absolute  right-0 -bottom-48 pointer-events-none opacity-20"
-        aria-hidden="true"
-      >
-        <img src="/wavy.png" alt="wavy svg" />
-      </div>
+    <div
+      className="absolute  right-0 bottom-64 md:-bottom-64 pointer-events-none opacity-10"
+      aria-hidden="true"
+    >
+      <img src="/wavy.png" alt="wavy svg" />
+    </div>
       {/* Outer centered wrapper (max-width 1440px) */}
       <div className="mx-auto max-w-[1440px] px-6 md:px-10">
         {/* HERO */}
@@ -115,7 +116,7 @@ export default function Landing() {
 
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-20">
                 <FeatureCard
-                  icon="https://www.svgrepo.com/show/354355/automation-robot.svg"
+                  icon={<Waypoints color="#155dfc" className="size-7 md:size-10" />}
                   title="Smart Routing"
                 >
                   Automatically route tickets to the right team using rules and
@@ -123,7 +124,7 @@ export default function Landing() {
                 </FeatureCard>
 
                 <FeatureCard
-                  icon="https://www.svgrepo.com/show/354204/clock-timer.svg"
+                  icon={<CalendarSync color="#155dfc" className="size-7 md:size-10" />}
                   title="SLA & Prioritization"
                 >
                   Set SLAs, priorities and reminders so nothing falls through
@@ -131,7 +132,7 @@ export default function Landing() {
                 </FeatureCard>
 
                 <FeatureCard
-                  icon="https://www.svgrepo.com/show/354271/report.svg"
+                  icon={<ChartLine color="#155dfc" className="size-7 md:size-10" />}
                   title="Analytics & Reports"
                 >
                   Track performance with clear reports — reduce response times
