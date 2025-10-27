@@ -1,18 +1,5 @@
 import { Link } from "react-router-dom";
 
-/**
- * Tickify — Landing Page (single file)
- *
- * - Max width 1440px centered
- * - Hero with wavy SVG bottom edge
- * - At least two decorative circles (overlapping hero)
- * - Box-shaped feature & content cards with shadows and rounded corners
- * - Responsive (mobile/tablet/desktop)
- * - Accessible: semantic HTML, alt text, focus-visible styles
- *
- * Replace icon URLs with your own assets if desired.
- */
-
 const FeatureCard = ({ icon, title, children }) => (
   <article
     className="bg-white rounded-2xl shadow-md p-6 flex flex-col gap-3"
@@ -49,6 +36,12 @@ const Testimonial = ({ name, role, text }) => (
 export default function Landing() {
   return (
     <div className="min-h-screen bg-gray-50 text-gray-900">
+      <div
+        className="absolute  right-0 -bottom-48 pointer-events-none opacity-20"
+        aria-hidden="true"
+      >
+        <img src="/wavy.png" alt="wavy svg" />
+      </div>
       {/* Outer centered wrapper (max-width 1440px) */}
       <div className="mx-auto max-w-[1440px] px-6 md:px-10">
         {/* HERO */}
@@ -106,28 +99,12 @@ export default function Landing() {
           <div className="size-10 bg-transparent border-4 border-blue-200 absolute right-1/2 top-1/2 rounded-full"></div>
 
           {/* Wave SVG bottom edge of hero */}
-          <div
-            className="absolute left-0 right-0 bottom-0 pointer-events-none"
-            aria-hidden="true"
-          >
-            {/* <svg
-              viewBox="0 0 1440 140"
-              preserveAspectRatio="none"
-              className="w-full h-36 md:h-48"
-            >
-              <path
-                d="M0,56 C200,140 400,0 720,48 C1040,96 1200,32 1440,96 L1440 140 L0 140 Z"
-                fill="#f8fafc"
-              />
-            </svg> */}
-          </div>
         </header>
 
         {/* FEATURES */}
         <main className="-mt-8 md:-mt-12 ">
           <section id="features" className="py-32">
             <div className="max-w-7xl mx-auto">
-                
               <h2 className="text-3xl font-medium text-center mb-3">
                 Powerful features
               </h2>
@@ -196,12 +173,7 @@ export default function Landing() {
           <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
             <div className="flex items-center gap-3">
               <div className="text-xl font-bold flex justify-center items-center gap-2">
-         
-                <img
-                  src="/logo.svg"
-                  alt="Tickify Logo"
-                  className="w-5 h-5"
-                />
+                <img src="/logo.svg" alt="Tickify Logo" className="w-5 h-5" />
                 <span>Tickify</span>
               </div>
               <div className="text-sm text-gray-500">
