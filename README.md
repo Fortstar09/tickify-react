@@ -26,8 +26,8 @@ Follow these steps to set up the project locally.
 ### 1️⃣ Clone the Repository
 
 ```bash
-git clone https://github.com/<your-username>/tickify.git
-cd tickify
+git clone https://github.com/Fortstar09/tickify-vue.git
+cd tickify-vue
 
 ```
 
