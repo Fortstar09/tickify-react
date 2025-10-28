@@ -66,7 +66,7 @@ const EachSettingList = ({
   isDanger,
 }) => {
   return (
-    <div className="flex justify-between items-center">
+    <div className="flex justify-between items-start md:item-center flex-col gap-3 md:flex-row">
       <div className="flex flex-col gap-0.5">
         <h2
           className={`${
@@ -83,3 +83,5 @@ const EachSettingList = ({
     </div>
   );
 };
+
+
